@@ -1,0 +1,112 @@
+body{
+  display:flex;
+ min-height:100vh;
+  justify-content:space-around;
+  align-items:center;
+}
+
+.player-container{
+  display:flex;
+  flex-direction:column;
+    text-align:center;
+  justify-content:space-between;
+  padding:20px;
+  width:500px;
+  height:500px;
+  border-shadow:white;
+  background-color:black;
+  border-radius:20px;
+  
+}
+
+.img-container{
+  top:-50px;
+  left:50px;
+  position:relative;
+  width:200px;
+  height:200px;
+  
+  
+}
+img{
+  height:200px;
+  width:90%;
+  object-fit:cover;
+  
+}
+.progress-container{
+   background: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 40px 20px;
+  height: 4px;
+  width: 90%;
+}
+.progress {
+  background: #242323;
+  border-radius: 5px;
+  height: 100%;
+  width: 0%;
+  transition: width 0.1s linear;
+}
+.duration-wrapper {
+  margin:20px;
+  postion:relative;
+  justify-content:space-between;
+  top:-25px;
+  display:flex;
+  
+}
+.player-controls{
+  position:relative;
+  top:-20px;
+  left:80px;
+  width:200px;
+ 
+}
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;700&display=swap');
+
+html {
+  box-sizing: border-box;
+}
+
+.fas {
+  font-size: 20px;
+  color: rgb(129, 129, 129);
+  margin-right: 30px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.fas:hover {
+  filter: brightness(80%);
+}
+
+.main-button {
+  font-size: 40px;
+  position: relative;
+  top: 3px;
+}
+
+@media screen and (max-width: 600px) {
+  .player-container {
+    width: 95vw;
+  }
+
+  .img-container {
+    left: 29px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  h3 {
+    font-size: 15px;
+  }
+
+  .player-controls {
+    top: -10px;
+    left: 100px;
+  }
+}
