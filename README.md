@@ -1,2 +1,2 @@
 # musicPlayer
-musicPlayer from javascript 
+musicPlayer from javascript challenges
